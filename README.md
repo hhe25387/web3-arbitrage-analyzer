@@ -1,40 +1,48 @@
 # 🚀 Web3 Arbitrage Reality Analyzer
 
-A Web3-aware arbitrage analyzer that compares centralized exchange (CEX) prices with decentralized exchange (DEX) liquidity, and determines whether a theoretical arbitrage opportunity is actually executable in real-world conditions.
+> Most arbitrage tools show profit.  
+> This tool shows why you **still lose money**.
+
+A Web3-aware arbitrage analyzer that compares centralized exchange (CEX) prices with live decentralized exchange (DEX) liquidity, and determines whether a theoretical arbitrage opportunity actually survives real-world execution.
 
 ---
 
-## 💡 Key Idea
+## ⚡ What Makes This Different
 
-Most arbitrage tools only show **theoretical price differences**.
+Most arbitrage tools only detect **price differences**.
 
-👉 This project answers a more important question:
+❌ They assume perfect execution  
+❌ They ignore real-world costs  
 
-> **Can the arbitrage actually survive real execution?**
+👉 This project models the reality of execution:
 
-It models:
-- ⏱ Delay (latency)
+- ⏱ Latency (delay)
 - 📉 Slippage
-- ⛽ Gas fees (on-chain)
+- ⛽ On-chain gas fees
 - 💸 Trading & transfer costs
 
+💡 **Result: Many “profitable” opportunities are actually NOT executable**
+
 ---
 
-## 🧠 Features
+## 🧠 Core Features
 
 - 🔗 Live Web3 data from DexScreener (Uniswap / DEX liquidity)
 - 🏦 CEX price comparison (Coinbase, Kraken, etc.)
 - 📊 Theoretical arbitrage detection
 - ⚙️ Execution stress testing (delay + slippage)
 - 💰 Full cost breakdown (fees, gas, transfer)
-- 🎲 Monte Carlo simulation for success probability
-- 🚨 Final verdict: EXECUTE or DO NOT EXECUTE
+- 🎲 Monte Carlo simulation for execution success probability
+- 🚨 Final decision: **EXECUTE / DO NOT EXECUTE**
 
 ---
 
-## 📸 Demo
+## 📊 What You Get
 
-![App Screenshot](arbitrage_summary.png)
+- Realistic **net profit** after all costs
+- Clear **go / no-go decision**
+- Execution **confidence level**
+- Visual comparison of theoretical vs actual outcomes
 
 ---
 
@@ -42,11 +50,17 @@ It models:
 
 Even when a price difference exists:
 
-- Theoretical profit: +$0.65  
-- Total fees: ~$25  
+- Theoretical profit: **+$0.65**  
+- Total fees: **~$25**  
 - Final expected profit: **negative**
 
 👉 **Conclusion: Not realistically executable**
+
+---
+
+## 📸 Demo
+
+![App Screenshot](arbitrage_summary.png)
 
 ---
 
@@ -60,7 +74,7 @@ Even when a price difference exists:
 
 ---
 
-## ▶️ How to Run
+## ▶️ Run Locally
 
 ```bash
 pip install -r requirements.txt
