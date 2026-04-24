@@ -1,5 +1,8 @@
 # 🚀 Web3 Arbitrage Reality Analyzer
 
+## 🌐 Live Demo  
+👉 https://web3-arbitrage-analyzer.streamlit.app/
+
 > Most arbitrage tools show profit.  
 > This tool shows why you **still lose money**.
 
